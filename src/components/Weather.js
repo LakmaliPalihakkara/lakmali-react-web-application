@@ -4,7 +4,10 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import moment from 'moment';
 import ListGroup from 'react-bootstrap/ListGroup';
-
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import service2 from '../images/service2.jpg'
+import Container from 'react-bootstrap/Container';
 
 
 const CardExampleCard = ({weatherData}) => (
@@ -40,16 +43,21 @@ const CardExampleCard = ({weatherData}) => (
     </Card>
 
 
-<div style={{ width: '50%', paddingLeft: '100px', paddingRight:'100px' }} className="todoapp stack-large">
-<h1>October Camping Check List</h1>
-<ul
+    <Container>
+              <h1 style={{color: "red",margin:"50px"}}>October Camping Check List</h1>
+          <Row>
+
+          <Col>
+
+<div style={{ width: '100%', paddingLeft: '100px', paddingRight:'100px' }} className="todoapp stack-large">
+<ul class="list-unstyled"
   role="list"
   className="todo-list stack-large stack-exception"
   aria-labelledby="list-heading"
 >
 
 <h4>Equipment</h4>
-  <li>
+  <li style={{display: '100%'}}>
     <div style={{display: 'flex', justifyContent:'flex-start'}}>
       <input type="checkbox" defaultChecked={false} />
       <label style={{paddingLeft:'5px', paddingTop:'7px'  }} >
@@ -84,18 +92,98 @@ const CardExampleCard = ({weatherData}) => (
       Lantern
       </label>
     </div>
- 
   </li>
-  <li className="todo stack-small">
-    <div className="c-cb">
-      <input id="todo-1" type="checkbox" />
-      <label className="todo-label" htmlFor="todo-1">
-        Sleep
+
+  <h4>Kitchen gear</h4>
+  <li>
+    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+      <input type="checkbox" defaultChecked={false} />
+      <label style={{paddingLeft:'5px', paddingTop:'7px'  }} >
+      Mess kit (plate, mug, bowl, utensils)
       </label>
     </div>
+
+    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+      <input type="checkbox" defaultChecked={false} />
+      <label  style={{paddingLeft:'7px', paddingTop:'7px' }}>
+      Camp stove
+      </label>
+    </div>
+
+    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+      <input id="todo-0" type="checkbox" defaultChecked={false} />
+      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      Fuel
+      </label>
+    </div>
+
+    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+      <input id="todo-0" type="checkbox" defaultChecked={false} />
+      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      Large bowl
+      </label>
+    </div>
+
+    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+      <input id="todo-0" type="checkbox" defaultChecked={false} />
+      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      Can opener
+      </label>
+    </div>
+
+
+  </li>
+
+  <h4>Personal hygiene</h4>
+  <li>
+    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+      <input type="checkbox" defaultChecked={false} />
+      <label style={{paddingLeft:'5px', paddingTop:'7px'  }} >
+      Insect repellent
+      </label>
+    </div>
+
+    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+      <input type="checkbox" defaultChecked={false} />
+      <label  style={{paddingLeft:'7px', paddingTop:'7px' }}>
+      Sunscreen
+      </label>
+    </div>
+
+    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+      <input id="todo-0" type="checkbox" defaultChecked={false} />
+      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      Aloe gel
+      </label>
+    </div>
+
+    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+      <input id="todo-0" type="checkbox" defaultChecked={false} />
+      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      Biodegradable shampoo & soap
+      </label>
+    </div>
+
+    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+      <input id="todo-0" type="checkbox" defaultChecked={false} />
+      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      Can opener
+      </label>
+    </div>
+
+    
   </li>
 </ul>
 </div>
+
+</Col>
+
+<Col>
+<img src={service2} alt='Camping'/>
+</Col>
+
+</Row>
+        </Container>
 
 </div>
 )

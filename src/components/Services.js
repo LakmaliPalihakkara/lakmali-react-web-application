@@ -34,11 +34,6 @@ function Services(){
             <p style={{paddingTop:"20px", paddingBottom:"30px"}}><b>Weather Forcast Services</b></p>
             </Col>
           </Row>
-          {/* <Row>
-            <Col>1 of 3</Col>
-            <Col xs={5}>2 of 3 (wider)</Col>
-            <Col>3 of 3</Col>
-          </Row> */}
         </Container>
       );
     }
