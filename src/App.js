@@ -26,7 +26,6 @@ function App() {
         </a>
       </header> } */}
 
-
     
 <Router>
   <ul class="nav">

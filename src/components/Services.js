@@ -11,7 +11,7 @@ function Services(){
 
     return (
         <Container>
-              <h1 style={{color: "red",margin:"50px"}}>Our Services</h1>
+              <h1 style={{color: "#DFF6FF",margin:"50px"}}>Our Services</h1>
           <Row>
         
             <Col>

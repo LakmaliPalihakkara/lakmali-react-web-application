@@ -39,7 +39,7 @@
   input[type="submit"],
   .button {
     position: relative;
-    background: #ec5990;
+    background: #256D85;
     color: white;
     text-transform: uppercase;
     border: none;
@@ -61,7 +61,7 @@
   
   input[type="submit"]:hover,
   button[type="button"]:hover {
-    background: #bf1650;
+    background: #47B5FF;
     color: white;
   }
   
