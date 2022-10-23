@@ -7,7 +7,7 @@ export function Contact() {
 
   return (
     <div>
-    <h1 style={{color: "#DFF6FF",marginTop:"50px", marginBottom:"-40px"}}>Contact Us</h1>
+    <h1 style={{color: "#DFF6FF",marginTop:"25px", marginBottom:"-40px"}}>Contact Us</h1>
 
     <form className="form" onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
       <select {...register("category", { required: true })}>

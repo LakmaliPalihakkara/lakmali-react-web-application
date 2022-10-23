@@ -1,6 +1,4 @@
 import React from 'react';
-// import './styles.css';
-// import { Card } from 'semantic-ui-react'
 import Card from 'react-bootstrap/Card';
 import moment from 'moment';
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -12,25 +10,6 @@ import Container from 'react-bootstrap/Container';
 
 
 const CardExampleCard = ({weatherData}) => (
-//   <Card>
-//     <Card.Content>
-//         <Card.Header className="header">{weatherData.name}</Card.Header>
-//     </Card.Content>
-//   </Card>
-
-/* <Card>
-      <Card.Body>{weatherData.name}</Card.Body>
-      <p>Temprature: {weatherData.main.temp} &deg;C</p>
-        <p>Sunrise: {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString('en-IN')}</p>
-        <p>Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString('en-IN')}</p>
-        <p>Description: {weatherData.weather[0].main}</p>
-        <p>Humidity: {weatherData.main.humidity} %</p>
-        <p>Day: {moment().format('dddd')}</p>
-        <p>Date: {moment().format('LL')}</p>
-    </Card> */
-
-   
-
     <div>
 
 <h2 style={{color: "#DFF6FF",marginTop:"50px"}}>Current Weather Report</h2>
@@ -80,7 +59,7 @@ const CardExampleCard = ({weatherData}) => (
     <div style={{display: 'flex', justifyContent:'flex-start'}}>
       <input id="todo-0" type="checkbox" defaultChecked={false} />
       <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
-      Sleeping pad or air mattress
+      Sleeping pad
       </label>
     </div>
 
@@ -99,12 +78,12 @@ const CardExampleCard = ({weatherData}) => (
     </div>
   </li>
 
-  <h4 style={{ marginTop:"20px"}}>Kitchen gear</h4>
+  <h4 style={{ marginTop:"20px"}}>Kitchen Gear</h4>
   <li>
     <div style={{display: 'flex', justifyContent:'flex-start'}}>
       <input type="checkbox" defaultChecked={false} />
       <label style={{paddingLeft:'5px', paddingTop:'7px'  }} >
-      Mess kit (plate, mug, bowl, utensils)
+      Mess kit
       </label>
     </div>
 
@@ -139,7 +118,7 @@ const CardExampleCard = ({weatherData}) => (
 
   </li>
 
-  <h4 style={{ marginTop:"20px"}}>Personal hygiene</h4>
+  <h4 style={{ marginTop:"20px"}}>Personal Hygiene</h4>
   <li>
     <div style={{display: 'flex', justifyContent:'flex-start'}}>
       <input type="checkbox" defaultChecked={false} />
@@ -165,7 +144,7 @@ const CardExampleCard = ({weatherData}) => (
     <div style={{display: 'flex', justifyContent:'flex-start'}}>
       <input id="todo-0" type="checkbox" defaultChecked={false} />
       <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
-      Biodegradable shampoo & soap
+     Shampoo & soap
       </label>
     </div>
 
@@ -184,8 +163,8 @@ const CardExampleCard = ({weatherData}) => (
 </Col>
 
 <Col>
-<img  style={{marginTop:"60px"}} src={tools1} alt='Tools'/>
-<img style={{marginTop:"20px"}} src={tools2} alt='Tools'/>
+<img class="tools-img1" src={tools1} alt='Tools'/>
+<img class="tools-img2" src={tools2} alt='Tools'/>
 </Col>
 
 </Row>
