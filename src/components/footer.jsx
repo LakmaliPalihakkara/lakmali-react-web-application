@@ -36,7 +36,7 @@ const Footer = () =>
 
                 <input placeholder="Email Address" />
 
-                <Button style={{background:"#06283D"}} variant="primary">Subscribe</Button>{' '}
+                <Button style={{background:"#06283D", marginLeft:"5px"}} variant="primary">Subscribe</Button>{' '}
 
                 {/* <ul  className="list-unstyled">
                     <li><a href="#!">Home</a></li>

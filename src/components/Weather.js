@@ -6,7 +6,8 @@ import moment from 'moment';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import service2 from '../images/service2.jpg'
+import tools1 from '../images/tools1.jpg'
+import tools2 from '../images/tools2.jpg'
 import Container from 'react-bootstrap/Container';
 
 
@@ -28,38 +29,42 @@ const CardExampleCard = ({weatherData}) => (
         <p>Date: {moment().format('LL')}</p>
     </Card> */
 
+   
+
     <div>
-    <Card style={{ width: '50%', paddingLeft: '100px', paddingRight:'100px' }}>
+
+<h2 style={{color: "#DFF6FF",marginTop:"50px"}}>Current Weather Report</h2>
+<h6 style={{color: "#DFF6FF", marginBottom:"40px"}}>Source: OpenWeather</h6>
+
+    <Card style={{color:"#06283D", width:"50%" }} class="col d-flex justify-content-center">
        <Card.Body>{weatherData.name}</Card.Body>
       <ListGroup variant="flush">
+        <ListGroup.Item>Date: {moment().format('LL')}</ListGroup.Item>
+        <ListGroup.Item>Day: {moment().format('dddd')}</ListGroup.Item>
         <ListGroup.Item>Temprature: {weatherData.main.temp} &deg;C</ListGroup.Item>
         <ListGroup.Item>Sunrise: {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString('en-IN')}</ListGroup.Item>
         <ListGroup.Item>Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString('en-IN')}</ListGroup.Item>
         <ListGroup.Item>Description: {weatherData.weather[0].main}</ListGroup.Item>
         <ListGroup.Item>Humidity: {weatherData.main.humidity} %</ListGroup.Item>
-        <ListGroup.Item>Day: {moment().format('dddd')}</ListGroup.Item>
-        <ListGroup.Item>Date: {moment().format('LL')}</ListGroup.Item>
+     
+       
       </ListGroup>
     </Card>
 
 
     <Container>
-              <h1 style={{color: "red",margin:"50px"}}>October Camping Check List</h1>
+              <h2 style={{color: "#DFF6FF",margin:"50px"}}>October - December Camping Check List</h2>
           <Row>
 
           <Col>
 
 <div style={{ width: '100%', paddingLeft: '100px', paddingRight:'100px' }} className="todoapp stack-large">
-<ul class="list-unstyled"
-  role="list"
-  className="todo-list stack-large stack-exception"
-  aria-labelledby="list-heading"
->
+<ul>
 
-<h4>Equipment</h4>
+<h4 style={{ marginTop:"20px"}}>Equipment</h4>
   <li style={{display: '100%'}}>
     <div style={{display: 'flex', justifyContent:'flex-start'}}>
-      <input type="checkbox" defaultChecked={false} />
+      <input id='checkbox' type="checkbox" defaultChecked={false} />
       <label style={{paddingLeft:'5px', paddingTop:'7px'  }} >
       Tent
       </label>
@@ -94,7 +99,7 @@ const CardExampleCard = ({weatherData}) => (
     </div>
   </li>
 
-  <h4>Kitchen gear</h4>
+  <h4 style={{ marginTop:"20px"}}>Kitchen gear</h4>
   <li>
     <div style={{display: 'flex', justifyContent:'flex-start'}}>
       <input type="checkbox" defaultChecked={false} />
@@ -134,7 +139,7 @@ const CardExampleCard = ({weatherData}) => (
 
   </li>
 
-  <h4>Personal hygiene</h4>
+  <h4 style={{ marginTop:"20px"}}>Personal hygiene</h4>
   <li>
     <div style={{display: 'flex', justifyContent:'flex-start'}}>
       <input type="checkbox" defaultChecked={false} />
@@ -179,7 +184,8 @@ const CardExampleCard = ({weatherData}) => (
 </Col>
 
 <Col>
-<img src={service2} alt='Camping'/>
+<img  style={{marginTop:"60px"}} src={tools1} alt='Tools'/>
+<img style={{marginTop:"20px"}} src={tools2} alt='Tools'/>
 </Col>
 
 </Row>

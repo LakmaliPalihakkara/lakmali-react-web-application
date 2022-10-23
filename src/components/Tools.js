@@ -25,6 +25,7 @@ export default function Tools() {
     }
     fetchData();
   }, [lat,long])
+
   
   return (
     <div className="App">

@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from "react-router-dom";
 import Home from './components/Home';
 import Services from './components/Services';
 import Tools from './components/Tools';
@@ -33,16 +33,16 @@ function App() {
   <img src={logoimg} class="rounded float-right" alt='logo'/>
 
   <li>
-    <Link to="/home">Home</Link>
+    <Link to="/home"><b>Home</b></Link>
     </li>
     <li>
-    <Link to="/services">Services</Link>
+    <Link to="/services"><b>Services</b></Link>
     </li>
     <li>
-    <Link to="/tools">Tools</Link>
+    <Link to="/tools"><b>Tools</b></Link>
     </li>
     <li>
-    <Link to="/contact">Contact</Link>
+    <Link to="/contact"><b>Contact</b></Link>
     </li>
 
 
@@ -53,6 +53,7 @@ function App() {
   <Route path="/services" element={<Services/>} />
   <Route path="/tools" element={<Tools/>} />
   <Route path="/contact" element={<Contact/>} />
+  <Route path="/" element={<Navigate replace to="/home" />} />
     </Routes>
 
 </Router>

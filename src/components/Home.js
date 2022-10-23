@@ -16,7 +16,7 @@ function Home(){
 
 <br></br>
 
-<h1 style={{color: "#DFF6FF",margin:"30px"}}> Discover the best camping experience near <br />  Barrie, Ontario</h1>
+<h1 style={{color: "#DFF6FF",margin:"30px"}}> Discover the Best Camping Experience Near <br />  Barrie, Ontario</h1>
               <h6 style={{color: "#2c85a2",margin:"50px"}}>If a vacation just isn't a vacation unless you can pitch a tent and cook your dinner over a campfire, Barrie's parks have just what you are looking for. Camping is an excellent way to enjoy your vacation and to get up close and personal with nature. Whether you're tenting, or have that fully equipped RV - we've got a spot for you!
 </h6>
 
