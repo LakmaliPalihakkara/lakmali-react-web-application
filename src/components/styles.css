@@ -79,10 +79,7 @@
     display: inline-block;
     padding: 10px 20px;
   }
-  /* ul.nav > li:hover {
-    width: 100%;
-    background-color: #2779BF;
-  } */
+
   ul.nav > li > a {
     color: white;
     text-decoration: none;
@@ -93,12 +90,12 @@
   }
 
   ul.nav > li.active > a,
-ul.nav > li > a:active,
-ul.nav > li > a:focus
-{
+  ul.nav > li > a:active,
+  ul.nav > li > a:focus
+  {
     color: #06283D;
   
-}
+  }
   
   .card {
     margin: 0 auto;
@@ -130,6 +127,107 @@ list-style-type: none;
 .insta-img{
   width:60px;
   height:60px;
+}
+
+.contact{
+  color: #DFF6FF;
+  margin-Top:25px;
+  margin-Bottom:-40px
+}
+
+#footer-background{
+  background: #45a6de;
+  padding-Bottom:20px
+}
+
+#subscribe{
+  text-Align: center; 
+  margin-Top: 20px; 
+  color:#DFF6FF
+}
+
+.subscribe-title{
+  color:#06283D;
+  font-Size:18px;
+  margin-Bottom:15px;
+}
+
+.subscribe-btn{
+  background:#06283D;
+  margin-Left:5px;
+}
+
+.social-connect{
+  margin-Top:20px;
+  color:#06283D; 
+  font-Size:18px;
+}
+
+.title{
+  color: #DFF6FF;
+  margin:30px;
+}
+
+.sub-title{
+  color: #2c85a2;
+  margin:50px;
+}
+
+.location{
+  padding-Top:20px;
+}
+
+.area{
+  padding-Bottom:30px
+}
+
+.services-title{
+  color: #DFF6FF;
+  margin:50px;
+}
+
+.services{
+  padding-Top:20px;
+  padding-Bottom:30px
+}
+
+.tools-topic{
+  color: #DFF6FF;
+  margin-Top:50px
+}
+
+.weather-source{
+  color: #DFF6FF;
+   margin-Bottom:40px
+}
+
+#card{
+  color:#06283D;
+  width:50% 
+}
+
+#check-list{
+  width: 100%;
+  padding-Left: 100px;
+  padding-Right:100px
+}
+
+.check-list-topic{
+  margin-Top:20px
+}
+
+.check-list-item{
+  display: flex;
+  justify-Content:flex-start
+}
+
+.check-list-label{
+  padding-Left:5px;
+  padding-Top:7px
+}
+
+.check-list{
+  display: 100%
 }
 
 @media only screen and (max-width: 768px) {

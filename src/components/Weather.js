@@ -12,10 +12,10 @@ import Container from 'react-bootstrap/Container';
 const CardExampleCard = ({weatherData}) => (
     <div>
 
-<h2 style={{color: "#DFF6FF",marginTop:"50px"}}>Current Weather Report</h2>
-<h6 style={{color: "#DFF6FF", marginBottom:"40px"}}>Source: OpenWeather</h6>
+<h2 class="tools-topic" >Current Weather Report</h2>
+<h6 class="weather-source">Source: OpenWeather</h6>
 
-    <Card style={{color:"#06283D", width:"50%" }} class="col d-flex justify-content-center">
+    <Card id="card" class="col d-flex justify-content-center">
        <Card.Body>{weatherData.name}</Card.Body>
       <ListGroup variant="flush">
         <ListGroup.Item>Date: {moment().format('LL')}</ListGroup.Item>
@@ -32,85 +32,85 @@ const CardExampleCard = ({weatherData}) => (
 
 
     <Container>
-              <h2 style={{color: "#DFF6FF",margin:"50px"}}>October - December Camping Check List</h2>
+              <h2 class="tools-topic">October - December Camping Check List</h2>
           <Row>
 
           <Col>
 
-<div style={{ width: '100%', paddingLeft: '100px', paddingRight:'100px' }} className="todoapp stack-large">
+<div id="check-list" className="todoapp stack-large">
 <ul>
 
-<h4 style={{ marginTop:"20px"}}>Equipment</h4>
-  <li style={{display: '100%'}}>
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+<h4 class="check-list-topic">Equipment</h4>
+  <li class="check-list">
+    <div class="check-list-item">
       <input id='checkbox' type="checkbox" defaultChecked={false} />
-      <label style={{paddingLeft:'5px', paddingTop:'7px'  }} >
+      <label class="check-list-label">
       Tent
       </label>
     </div>
 
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input type="checkbox" defaultChecked={false} />
-      <label  style={{paddingLeft:'7px', paddingTop:'7px' }}>
+      <label  class="check-list-label">
       Groundsheet
       </label>
     </div>
 
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input id="todo-0" type="checkbox" defaultChecked={false} />
-      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      <label class="check-list-label">
       Sleeping pad
       </label>
     </div>
 
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input id="todo-0" type="checkbox" defaultChecked={false} />
-      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      <label class="check-list-label">
       Rope or cord
       </label>
     </div>
 
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input id="todo-0" type="checkbox" defaultChecked={false} />
-      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      <label class="check-list-label">
       Lantern
       </label>
     </div>
   </li>
 
-  <h4 style={{ marginTop:"20px"}}>Kitchen Gear</h4>
+  <h4 class="check-list-topic">Kitchen Gear</h4>
   <li>
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input type="checkbox" defaultChecked={false} />
-      <label style={{paddingLeft:'5px', paddingTop:'7px'  }} >
+      <label class="check-list-label" >
       Mess kit
       </label>
     </div>
 
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input type="checkbox" defaultChecked={false} />
-      <label  style={{paddingLeft:'7px', paddingTop:'7px' }}>
+      <label  class="check-list-label">
       Camp stove
       </label>
     </div>
 
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input id="todo-0" type="checkbox" defaultChecked={false} />
-      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      <label class="check-list-label">
       Fuel
       </label>
     </div>
 
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input id="todo-0" type="checkbox" defaultChecked={false} />
-      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      <label class="check-list-label">
       Large bowl
       </label>
     </div>
 
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input id="todo-0" type="checkbox" defaultChecked={false} />
-      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      <label class="check-list-label">
       Can opener
       </label>
     </div>
@@ -118,39 +118,39 @@ const CardExampleCard = ({weatherData}) => (
 
   </li>
 
-  <h4 style={{ marginTop:"20px"}}>Personal Hygiene</h4>
+  <h4 class="check-list-topic">Personal Hygiene</h4>
   <li>
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input type="checkbox" defaultChecked={false} />
-      <label style={{paddingLeft:'5px', paddingTop:'7px'  }} >
+      <label class="check-list-label" >
       Insect repellent
       </label>
     </div>
 
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input type="checkbox" defaultChecked={false} />
-      <label  style={{paddingLeft:'7px', paddingTop:'7px' }}>
+      <label class="check-list-label">
       Sunscreen
       </label>
     </div>
 
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input id="todo-0" type="checkbox" defaultChecked={false} />
-      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      <label class="check-list-label">
       Aloe gel
       </label>
     </div>
 
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input id="todo-0" type="checkbox" defaultChecked={false} />
-      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      <label class="check-list-label">
      Shampoo & soap
       </label>
     </div>
 
-    <div style={{display: 'flex', justifyContent:'flex-start'}}>
+    <div class="check-list-item">
       <input id="todo-0" type="checkbox" defaultChecked={false} />
-      <label style={{paddingLeft:'7px', paddingTop:'7px'  }}>
+      <label class="check-list-label">
       Can opener
       </label>
     </div>

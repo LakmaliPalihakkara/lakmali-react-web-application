@@ -11,27 +11,27 @@ function Services(){
 
     return (
         <Container>
-              <h1 style={{color: "#DFF6FF",margin:"50px"}}>Our Services</h1>
+              <h1 class="services-title">Our Services</h1>
           <Row>
         
             <Col>
             <img src={service1} alt='Camping'/>
-            <p style={{paddingTop:"20px", paddingBottom:"30px"}}><b>Camping Instraction Services</b></p>
+            <p class="services"><b>Camping Instraction Services</b></p>
             </Col>
 
             <Col>
             <img src={service2} alt='Camping'/>
-            <p style={{paddingTop:"20px", paddingBottom:"30px"}}><b>Health and Wellness Services</b></p>
+            <p class="services"><b>Health and Wellness Services</b></p>
             </Col>
 
             <Col>
             <img src={service3} alt='Camping'/>
-            <p style={{paddingTop:"20px", paddingBottom:"30px"}}><b>Nature Photography Guid Services</b></p>
+            <p class="services"><b>Nature Photography Guid Services</b></p>
             </Col>
 
             <Col>
             <img src={service4} alt='Camping'/>
-            <p style={{paddingTop:"20px", paddingBottom:"30px"}}><b>Weather Forcast Services</b></p>
+            <p class="services"><b>Weather Forcast Services</b></p>
             </Col>
           </Row>
         </Container>
